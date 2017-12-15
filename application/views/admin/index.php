@@ -30,6 +30,7 @@ desired effect
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
+        <?php echo $content; ?>
     </section>
     <!-- /.content -->
   </div>

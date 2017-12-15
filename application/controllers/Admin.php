@@ -7,7 +7,7 @@ class Admin extends Base {
 
 	public function index()
 	{
-        $data['title'] = 'Hello';
+        $data['content'] = "Admin-lte template";
         $this->load->view("{$this->folder_name}/index", $data);
 	}
 
