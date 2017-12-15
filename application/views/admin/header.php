@@ -204,3 +204,5 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </div>
     </nav>
   </header>
+
+<?php include_once("side_bar.php") ?>
