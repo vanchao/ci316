@@ -18,6 +18,10 @@ class Admin extends Base {
 
     public function form_test()
     {
-        $this->load->view("{$this->folder_name}/form_test");
+        if('POST' === $_SERVER['REQUEST_METHOD']) {
+            var_dump($this->input->post());
+        } else {
+            $this->load->view("{$this->folder_name}/form_test");
+        }
     }
 }
