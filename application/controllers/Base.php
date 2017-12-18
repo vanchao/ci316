@@ -6,5 +6,6 @@ class Base extends CI_Controller {
     {
         parent::__construct();
         $this->load->helper('url');
+        $this->load->helper('form'); 
     }
 }
