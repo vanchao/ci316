@@ -30,6 +30,40 @@ desired effect
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
+<?php
+
+// Open form and set URL for submit form
+echo form_open(site_url('admin/form_test'));
+
+// Show Name Field in View Page
+echo form_label('User Name :', 'u_name');
+$data= array(
+'name' => 'u_name',
+'placeholder' => 'Please Enter User Name',
+'class' => 'input_box'
+);
+echo form_input($data);
+
+// Show Email Field in View Page
+echo form_label('User email:', 'u_email');
+$data= array(
+'type' => 'email',
+'name' => 'u_email',
+'placeholder' => 'Please Enter Email Address',
+'class' => 'input_box'
+);
+echo form_input($data);
+?>
+
+<?php
+$data = array(
+'type' => 'submit',
+'value'=> 'Submit',
+'class'=> 'submit'
+);
+echo form_submit($data); ?>
+
+<?php echo form_close();?>
     </section>
     <!-- /.content -->
   </div>
