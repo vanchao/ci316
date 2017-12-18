@@ -15,4 +15,9 @@ class Admin extends Base {
 	{
         echo __CLASS__;
 	}
+
+    public function form_test()
+    {
+        $this->load->view("{$this->folder_name}/form_test");
+    }
 }
