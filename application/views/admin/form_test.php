@@ -33,7 +33,7 @@ desired effect
 <?php
 
 // Open form and set URL for submit form
-echo form_open(site_url('admin/form_test'));
+echo form_open('admin/form_test');
 
 // Show Name Field in View Page
 echo form_label('User Name :', 'u_name');
