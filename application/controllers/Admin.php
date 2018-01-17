@@ -3,7 +3,13 @@ include_once("Base.php");
 
 class Admin extends Base {
 
-    protected $folder_name = "admin";
+    protected $folder_name;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->folder_name = strtolower(__CLASS__);
+    }
 
 	public function index()
 	{
